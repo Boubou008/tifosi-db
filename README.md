@@ -25,7 +25,8 @@ tifosi-db/
 │  ├─ 01_create_db_and_user.sql
 │  ├─ 02_schema.sql
 │  ├─ 03_load_sample_data.sql
-│  └─ 04_tests.sql
+│  ├─ 04_tests.sql
+│  └─ 05_tests_resultats.md
 │
 └─ README.md
 ```
@@ -39,20 +40,15 @@ tifosi-db/
 
 ---
 
-## 🧱 Étapes d’installation
+## 🧱 Étapes du projet
 
 ### 1️⃣ Création de la base et de l’utilisateur
 Script : `sql/01_create_db_and_user.sql`
 
 Ce script crée :
 - la base de données `tifosi`
-- un utilisateur `tifosi` avec mot de passe `ChangeMe!123` (modifiable)
+- un utilisateur `tifosi` avec mot de passe `Password!`
 - tous les droits sur cette base
-
-**Commande à exécuter dans Workbench (avec root)** :
-```sql
-SOURCE "C:/Users/fxfec/Documents/CEF/Devoir base de données/tifosi-db/sql/01_create_db_and_user.sql";
-```
 
 ---
 
@@ -85,35 +81,26 @@ Permet de valider le fonctionnement sans dépendre des fichiers Excel.
 ### 4️⃣ Requêtes de validation
 Script : `sql/04_tests.sql`
 
-Contient les 10 requêtes demandées pour vérifier le bon fonctionnement du modèle.
+Ce script contient les 10 requêtes de vérification du modèle.  
+Les résultats sont consignés ci-dessous.
 
 ---
 
-## 🧪 Résultats attendus / obtenus
+## 🧪 Résultats des requêtes SQL
 
-| # | Objectif | Résultat attendu | Résultat obtenu | Commentaire |
-|---|-----------|------------------|-----------------|--------------|
-| 1 | Liste des focaccias (A→Z) | Aglio e Olio, Funghi, Margherina, Prosciutto, Raclaccia, Verde | | |
-| 2 | Nombre total d’ingrédients | 12 | | |
-| 3 | Prix moyen des focaccias | 8.95 | | |
-| 4 | Boissons et marque | Aranciata–San Pellegrino, Coca-Cola–Coca-Cola, Limonata–San Pellegrino, Pepsi–Pepsi | | |
-| 5 | Ingrédients de "Raclaccia" | Ail, Jambon, Mozzarella, Oignon | | |
-| 6 | Nb ingrédients/focaccia | Aglio e Olio:2, Funghi:3, Margherina:3, Prosciutto:3, Raclaccia:4, Verde:3 | | |
-| 7 | Focaccia avec le plus d’ingrédients | Raclaccia (4) | | |
-| 8 | Focaccias contenant de l’ail | Aglio e Olio, Raclaccia | | |
-| 9 | Ingrédients inutilisés | Anchois, Câpres | | |
-| 10 | Focaccias sans champignons | Aglio e Olio, Margherina, Prosciutto, Raclaccia, Verde | | |
+🔗 Voir le détail des résultats : [sql/05_tests_resultats.md](./sql/05_tests_resultats.md)
+
 
 ---
 
-## 🧰 Commandes MySQL utiles
+## 💾 Dépôt GitHub
 
-```sql
-SHOW DATABASES;
-USE tifosi;
-SHOW TABLES;
-DESCRIBE focaccia;
-```
+Le dépôt contient :
+- le dossier `sql/` avec tous les scripts SQL
+- le dossier `data/`
+- le présent fichier `README.md` complété
+
+Nom de dépôt : **tifosi-db**
 
 ---
 
