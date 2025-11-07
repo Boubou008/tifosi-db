@@ -11,9 +11,18 @@ Le travail comprend :
 
 ---
 
+## 🗺️ Modèle Conceptuel de Données (MCD)
+
+Le modèle conceptuel fourni par le client sert de base à la conception de la base de données *tifosi*.  
+Il décrit les entités principales, leurs attributs et les relations entre elles.
+
+![Modèle conceptuel de données](./docs/mcd_tifosi.png)
+
+---
+
+
 ## 🗂️ Structure du projet
 
-```
 tifosi-db/
 ├─ data/
 │  ├─ focaccia.xlsx
@@ -28,8 +37,10 @@ tifosi-db/
 │  ├─ 04_tests.sql
 │  └─ 05_tests_resultats.md
 │
+├─ docs/
+│  └─ mcd_tifosi.png
+│
 └─ README.md
-```
 
 ---
 
