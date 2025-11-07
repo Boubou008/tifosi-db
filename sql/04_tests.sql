@@ -20,7 +20,7 @@ FROM boisson b
 JOIN marque m ON m.id = b.marque_id
 ORDER BY b.nom;
 
--- 5. Ingrédients pour la focaccia 'Raclaccia' (adapte si le nom diffère)
+-- 5. Ingrédients pour la focaccia 'Raclaccia'
 SELECT i.nom AS ingredient
 FROM focaccia f
 JOIN focaccia_ingredient fi ON fi.focaccia_id = f.id
@@ -35,7 +35,7 @@ LEFT JOIN focaccia_ingredient fi ON fi.focaccia_id = f.id
 GROUP BY f.id, f.nom
 ORDER BY f.nom;
 
--- 7. Focaccia qui a le plus d'ingrédients (gère les ex æquo)
+-- 7. Focaccia qui a le plus d'ingrédients 
 WITH c AS (
   SELECT f.id, f.nom, COUNT(fi.ingredient_id) AS n
   FROM focaccia f

@@ -5,7 +5,6 @@ CREATE DATABASE IF NOT EXISTS tifosi
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_0900_ai_ci;
 
--- ⚠️ choisis un vrai mot de passe
 CREATE USER IF NOT EXISTS 'tifosi'@'localhost' IDENTIFIED BY 'Password!';
 
 GRANT ALL PRIVILEGES ON tifosi.* TO 'tifosi'@'localhost';

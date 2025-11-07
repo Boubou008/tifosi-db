@@ -1,8 +1,8 @@
 -- 03_load_sample_data.sql
--- Jeu de données d'exemple pour travailler sans fichiers CSV
+-- Jeu de données d'exemple 
 USE tifosi;
 
--- Nettoyage doux (si tu relances)
+-- Nettoyage doux
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE TABLE focaccia_ingredient;
 TRUNCATE TABLE boisson;
